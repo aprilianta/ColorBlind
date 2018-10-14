@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.grd.colorblind.simulasi10">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/nothing_2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_above="@id/tanya"
+        android:id="@+id/gambar"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Angka berapa yang terlihat?"
+        android:textColor="@color/black"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:layout_above="@id/jawab"
+        android:id="@+id/tanya"
+        android:textAlignment="center"/>
+    <EditText
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:textSize="36sp"
+        android:textAlignment="center"
+        android:inputType="number"
+        android:id="@+id/jawab"
+        android:layout_centerInParent="true"/>
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tidak ada angka"
+        android:id="@+id/tidak"
+        android:layout_below="@id/jawab"
+        android:layout_centerHorizontal="true"
+        android:textAppearance="?android:textAppearanceMedium"/>
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tidak"
+        android:layout_marginTop="20dp"
+        android:background="@color/colorPrimaryDark"
+        android:text="JAWAB"
+        android:id="@+id/kirim"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/white"/>
+</RelativeLayout>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.grd.colorblind">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/eye"
+        android:label="ButaWarna"
+        android:roundIcon="@drawable/eye"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".splashscreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".login" />
+        <activity android:name=".MainActivity" />
+        <activity
+            android:name=".register"
+            android:parentActivityName=".login">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".login" />
+        </activity>
+        <activity
+            android:name=".lupa"
+            android:parentActivityName=".login" />
+        <activity android:name=".about" />
+        <activity android:name=".simulasi1" />
+        <activity android:name=".simulasi2" />
+        <activity android:name=".simulasi3" />
+        <activity android:name=".simulasi4" />
+        <activity android:name=".simulasi5" />
+        <activity android:name=".simulasi6" />
+        <activity android:name=".simulasi7" />
+        <activity android:name=".simulasi8" />
+        <activity android:name=".simulasi9" />
+        <activity android:name=".simulasi10" />
+        <activity android:name=".hasil"></activity>
+    </application>
+
+</manifest>

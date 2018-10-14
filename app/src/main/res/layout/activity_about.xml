@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="com.grd.colorblind.about">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        android:id="@+id/linier"
+        android:orientation="horizontal"
+        android:layout_marginTop="50dp">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:src="@drawable/iak" />
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:src="@drawable/eye2" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/isi"
+        android:layout_marginTop="20dp"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:textAlignment="center"
+        android:text="Aplikasi ini dirancang untuk membantu pengguna agar dapat memahami kelainan pada mata yang disebut dengan buta warna.\nAplikasi ini hanya bersifat membantu pengguna, tidak memberikan keputusan final. \nHasil akan lebih optimal dan terpercaya dengan menghubungi dokter terkait.\n\n\nAplikasi ini dibangun untuk memenuhi project akhir\nIAK Batch 3 Yogyakarta Periode 3 Tahun 2017"
+        android:textColor="@color/black"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:textColor="@color/black"
+        android:text="Developer : Kevin Aprilianta\nTeknik Informatika - UPN 'Veteran' Yogyakarta"
+        android:textAlignment="center"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="30dp"
+        android:text="APLIKASI TES BUTA WARNA"
+        android:textAlignment="center"
+        android:id="@+id/isi"
+        android:textColor="@color/black"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:layout_below="@+id/linier" />
+</RelativeLayout>

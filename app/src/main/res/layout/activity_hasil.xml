@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.grd.colorblind.hasil">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:textAlignment="center"
+        android:id="@+id/hsl"
+        android:textColor="@color/black"
+        android:layout_centerInParent="true"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/eye2"
+        android:layout_above="@id/hsl"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/logo"
+        android:layout_marginBottom="20dp"/>
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        android:text="KEMBALI"
+        android:id="@+id/kembali"
+        android:textColor="@color/white"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/hsl"
+        android:layout_marginTop="20dp"/>
+</RelativeLayout>

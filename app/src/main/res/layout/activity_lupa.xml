@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="com.grd.colorblind.lupa">
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:width="200dp"
+        android:hint="Username"
+        android:id="@+id/username"
+        android:layout_above="@id/password"/>
+
+    <TextView
+        android:id="@+id/ketreset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="RESET PASSWORD"
+        android:layout_above="@id/username"
+        android:textAppearance="?android:textAppearanceLarge" />
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/password"
+        android:width="200dp"
+        android:layout_centerInParent="true"
+        android:inputType="textPassword"
+        android:hint="Password"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/eye2"
+        android:layout_above="@+id/ketreset"
+        android:layout_marginBottom="20dp"
+        android:layout_centerInParent="true"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        android:text="Reset"
+        android:id="@+id/reset"
+        android:textColor="#FFFFFF"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/password"
+        android:layout_marginTop="20dp"/>
+</RelativeLayout>
